@@ -2,7 +2,7 @@
 
 /**
 *
-* Cloud Shader
+* Gamecube supporting sky Shader
 *
 * Experimenting with perlin terrain. Height determines color. Modified a perlin function to support multiple octaves.
 * Threw clouds and water in for presentation. Next step is to do some lighting.
@@ -14,7 +14,7 @@
 
 #define M_PI 3.1415926535897932384626433832795
 
-const int OCTAVE_COUNT = 5;
+const int OCTAVE_COUNT = 20;
 const float WATER_LEVEL = 0;
 
 //in vec2      iResolution;           // viewport resolution (in pixels)
@@ -153,8 +153,8 @@ void main(void)
 {
 	float order = 1000.0;
 
-	float zoom = 1.0; //  + 0.05 * sin(0.5 * iGlobalTime * M_PI);
-	float cloudZoom = 3.0 + 0.05 * sin(0.5 * iGlobalTime * M_PI);
+	float zoom = 4 + 0.05 * sin(0.5 * iGlobalTime * M_PI);
+	float cloudZoom = 20.0; // + 0.05 * sin(0.5 * iGlobalTime * M_PI);
 	float land_feature = 2.0;
 	float water_feature = 80.0;
 	float feature_ratio = water_feature / land_feature;
@@ -191,11 +191,11 @@ void main(void)
 
 
 	//vec3 landColor = vec3(0.73, 0.62, 0.45) * (noiseA * (1.0 + diff));
-	vec3 landColor = vec3(0.71,0,1) * (noiseB * (1.0 + diff));
+	vec3 landColor = vec3(0.23,0,0.31) * (noiseB * (1.0 + diff));
 	// vec3 forestColor = vec3(0.93, 0.82, 0.65);
 	// vec3 mountainColor = vec3(0.93, 0.93, 0.93);
-	vec3 waterColor = vec3(0.71,0,1);
-	vec4 cloudColor = vec4(0.71,0,1, pow(cloud, 6.0));
+	vec3 waterColor = vec3(0.23,0,0.31);
+	vec4 cloudColor = vec4(1,1,1, pow(cloud, 6.0));
 
 	// fix for water level
 
