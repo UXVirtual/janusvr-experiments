@@ -78,7 +78,25 @@ module.exports = function(grunt) {
 
             glsl: {
                 command: function(filepath){
-                    return '../tools/glsl-validate '+filepath+' +profile=fragment';
+
+                    var splitPath = filepath.split('.');
+
+                    var shaderType = splitPath[splitPath.length-2];
+
+                    var profile;
+
+                    switch(shaderType){
+                        case 'frag':
+                        case 'fragment':
+                            profile = 'fragment';
+                            break;
+                        case 'vertex':
+                        case 'vert':
+                            profile = 'vertex';
+                            break;
+                    }
+
+                    return '../tools/glsl-validate '+filepath+' +profile='+profile;
                 },
                 stdout: true,
                 stderr: true,
