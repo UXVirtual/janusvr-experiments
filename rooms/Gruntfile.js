@@ -67,7 +67,10 @@ module.exports = function(grunt) {
                 }
             },
             glsl:{
-                files: ['shaders/*.glsl'],
+                //only processing fragment shaders as JanusVR does not support vertex shaders higher than #version 130
+                //and glsl-validate cannot compile shaders earlier than #version 150 - use JanusVR error_log.txt output
+                //to check for glsl errors instead
+                files: ['shaders/*.frag.glsl'],
                 options: {
                     livereload: false,
                     nospawn: true

@@ -14,12 +14,194 @@
 <FireBoxRoom>
     <Assets>
 
+        <AssetShader id="tree_shader" vertex_src="shaders/tree.vert.glsl" />
+        <AssetShader id="water_shader" vertex_src="shaders/water.vert.glsl" />
+        <AssetShader id="bush_shader" vertex_src="shaders/bush.vert.glsl" />
+
         <AssetScript src="js/reboot.min.js" />
+
+        <AssetObject id="spire2" src="http://vrsites.com/assets/Firefoxg/5/spire2.obj" tex0="http://vrsites.com/assets/Firefoxg/5/Gold.jpg" />
+
+
+        <AssetObject id="1" src="http://geniusvr.com/3dAds/curvedwallpanels2.obj" mtl="http://geniusvr.com/3dAds/curvedwallpanels2.mtl" />
+
+
+        <AssetObject id="campus" src="http://vrsites.com/assets/Firefoxg/5/campus.obj" mtl="http://vrsites.com/assets/Firefoxg/5/campus.mtl" />
+        <AssetObject id="kioska" src="http://vrsites.com/assets/Firefoxg/5/kiosk1.obj" mtl="http://vrsites.com/assets/Firefoxg/5/kiosk1.mtl" />
+        <AssetObject id="kioskb" src="http://vrsites.com/assets/Firefoxg/5/kiosk2.obj" mtl="http://vrsites.com/assets/Firefoxg/5/kiosk2.mtl" />
+
+        <AssetObject id="kioskas" src="http://vrsites.com/assets/Firefoxg/5/kiosk1screen.obj" tex0="http://quotes.freerealtime.com/gra/intraindex/DJIA.gif" />
+        <AssetObject id="kioskbs" src="http://vrsites.com/assets/Firefoxg/5/kiosk2screen.obj" />
+
+        <AssetImage id="tech1" src="http://www.futurism.co/wp-content/uploads/2014/07/July11th-techweekly_4.jpg" />
+        <AssetImage id="tech2" src="http://www.futurism.co/wp-content/uploads/2014/07/July18th-techweekly_4.jpg" />
+        <AssetImage id="tech3" src="http://www.futurism.co/wp-content/uploads/2014/07/june29-techweeklyyy.jpg" />
+        <AssetImage id="tech4" src="http://www.futurism.co/wp-content/uploads/2014/06/june24-techweekly.jpg" />
+        <AssetImage id="tech5" src="http://www.futurism.co/wp-content/uploads/2014/07/July25th-techweekly.jpg" />
+        <AssetImage id="tech6" src="http://www.futurism.co/wp-content/uploads/2014/08/Aug1st-techweekly_2.jpg" />
+        <AssetImage id="techb1" src="http://i.imgur.com/tgPn5Um.png" />
+        <AssetImage id="techb2" src="http://i.imgur.com/tL5D3b4.png" />
+        <AssetImage id="techb3" src="http://i.imgur.com/71GDiNW.png" />
+        <AssetImage id="techb4" src="http://i.imgur.com/pDhDfWS.png" />
+        <AssetImage id="techb5" src="http://i.imgur.com/QrEFHve.png" />
+        <AssetImage id="arrow" src="http://geniusvr.com/arrow.png" />
+
+        <AssetObject id="wings" src="http://vrsites.com/assets/Firefoxg/5/anglewings.obj" mtl="http://vrsites.com/assets/Firefoxg/5/anglewings.mtl" />
+
+        <AssetObject id="campusblock" src="http://geniusvr.com/teststuff/testcity/city.dae" />
+        <AssetObject id="campusblockcoll" src="http://geniusvr.com/campus/cityblockforcampus2col.obj" />
+
+        <AssetImage id="thumb1" src="http://www.danpontefract.com/wp-content/uploads/2012/02/khan.png" />
+        <AssetImage id="thumb2" src="http://vrsites.com/assets/Firefoxg/7/TED-logo.jpg" />
+        <AssetImage id="thumb3" src="http://vrsites.com/assets/Firefoxg/7/redditVReducation.jpg" />
+        <AssetImage id="thumb4" src="http://o.aolcdn.com/hss/storage/midas/b3b0fcf478418b69fdc6f7d54061f363/200378093/oc1_630pxhedimg.jpg" />
+        <AssetImage id="thumb5" src="http://geniusvr.com/teststuff/undergroundmanifoldthumbhack.jpg" />
+        <AssetImage id="thumb6" src="http://scicalgas.com/wp-content/uploads/2013/07/Periodic-Table.jpg" />
+        <AssetImage id="thumb7" src="https://solarsystem.nasa.gov/planets/images/splash-planets.jpg" />
+        <AssetImage id="thumb8" src="http://rack.2.mshcdn.com/media/ZgkyMDEyLzEyLzA0L2Q2L3Zpc2l0dGhlcHlyLjVOTC5qcGcKcAl0aHVtYgk5NTB4NTM0IwplCWpwZw/df185925/432/visit-the-pyramids-of-giza-with-this-interactive-3d-site-6969340e3c.jpg" />
+        <AssetImage id="thumb9" src="http://geniusvr.com/khan/engine/engine.jpg" />
+        <AssetImage id="thumb10" src="http://geniusvr.com/google/googlethumb.png" />
+        <AssetImage id="thumb11" src="http://geniusvr.com/khan/mars/marsthumb.jpg" />
+        <AssetImage id="thumb12" src="http://geniusvr.com/khan/moon/moonthumb.jpg" />
+        <AssetImage id="thumb13" src="http://www.f1fanatic.co.uk/wp-content/uploads/2009/02/redbullrb5_2009f1car.jpg" />
+        <AssetImage id="thumb14" src="http://geniusvr.com/newsroom/thumb.png" />
+
+
+
+        <AssetObject id="tree" shader_id="tree_shader" src="http://geniusvr.com/teststuff/tree1.obj" mtl="http://geniusvr.com/teststuff/tree1.mtl" />
+        <AssetVideo id="vid_id" src="http://geniusvr.com/teststuff/citysound.ogg" auto_play="true" loop="true"/>
+
+
+        <AssetImage id="logo2" src="http://static.tumblr.com/46adc986cac01b513a7c33d5d41d37f0/fdajg3c/luUmk8e8g/tumblr_static_cyberdyne_systems_logo_by_pencilshade.png" />
+        <AssetImage id="logo3" src="http://website873.com/tshirts/weyland-yutani-Mil.png" />
+        <AssetImage id="logo4" src="http://img2.wikia.nocookie.net/__cb20130914231407/half-life/en/images/1/14/Valve_transparent_logo.png" />
+        <AssetImage id="logo5" src="http://upload.wikimedia.org/wikipedia/en/6/66/Oculus_VR_Logo.png " />
+        <AssetImage id="logo8" src="http://i.imgur.com/MnQXIL9.png" />
+        <AssetImage id="logo9" src="http://i.imgur.com/gYi2rmk.png" />
+        <AssetImage id="logo15" src="http://i.imgur.com/4URyP0M.png" />
+        <AssetImage id="aussiebar" src="http://www.thevrbar.com/barfront.jpg" />
+        <AssetImage id="DJIA" src="http://quotes.freerealtime.com/gra/intraindex/DJIA.gif" />
+
+
+        <AssetObject id="ring" src="http://vrsites.com/assets/firefoxgg/7/ring3.obj" tex0="http://www.string.se/img/dimensions/swatch_white.png" />
+
+
+        <AssetImage id="maniR" src="http://geniusvr.com/teststuff/manifoldrighteye32x5new2.png" />
+        <AssetImage id="maniL" src="http://geniusvr.com/teststuff/manifoldlefteye32x5new2.png" />
 
     </Assets>
 
-    <Room>
+    <Room visible="false" default_sounds="false" pos="35.000 -3.000 14.000" xdir="0.000 0.000 -1.000" ydir="0.000 1.000 0.000" zdir="1.000 0.000 0.000" col="1.000 1.000 1.000" near_dist="0.010" far_dist="10000.000" walk_speed="5.000" run_speed="10.000" fog="true" fog_mode="exp2" fog_density="0.0015" fog_start="10.0" fog_end="1000.0" fog_col="0.65 0.65 0.65">
+        <Image id="arrow" js_id="2012" pos="47.000 -3.000 0.000" xdir="-1.000 -0.000 -0.000" ydir="-0.000 -0.000 1.000" zdir="-0.000 1.000 0.000" scale="3.000 1.000 1.000" lighting="false" />
 
+        <Object id="1" js_id="1780" pos="40.400 -1.400 17.300" xdir="-0.000 1.000 -0.000" ydir="-0.000 -0.000 -1.000" zdir="-1.000 -0.000 0.000" scale="0.800 0.600 0.500" lighting="false" />
+        <Object id="1" js_id="1784" pos="40.300 -1.400 -17.200" xdir="-0.000 1.000 -0.000" ydir="0.000 0.000 1.000" zdir="1.000 0.000 -0.000" scale="0.800 0.700 0.500" lighting="false" />
+
+        <Image3D left_id="maniL" right_id="maniR" js_id="398" pos="36.000 9.800 0.000" xdir="0.000 0.000 1.000" ydir="-0.500 0.866 0.000" zdir="-0.866 -0.500 0.000" scale="17.400 17.400 1.000" lighting="false" />
+        <Object id="campus" locked="true" js_id="171" cull_face="none" lighting="false" collision_id="campus" pos="0.000 0.000 0.000" xdir="0.000 0.000 1.000" ydir="0.000 1.000 0.000" zdir="-1.000 0.000 0.000" />
+        <Object id="campusblock" collision_id="campusblockcoll" locked="true" js_id="172" lighting="false" pos="0.000 0.000 0.000" xdir="0.000 0.000 1.000" ydir="0.000 1.000 0.000" zdir="-1.000 0.000 0.000" />
+
+        <Object id="spire2" lighting="false" js_id="173a" pos="0.000 0.000 0.000" xdir="0.000 0.000 1.000" ydir="0.000 1.000 0.000" zdir="-1.000 0.000 0.000" scale="1 1 1" cull_face="none" />
+
+        <Object id="ring" js_id="1234" pos="0 200 -160" xdir="-1.000 0.000 0.000" ydir="0.000 1.000 0.000" zdir="0.000 0.000 -1.000" scale="10.0000 10.0000 10.0000" rotate_axis="0.000 0.000 1.000" rotate_deg_per_sec="200.000" />
+        <Object id="ring" js_id="2132" pos="0 200 -160" xdir="-1.000 0.000 0.000" ydir="0.000 1.000 0.000" zdir="0.000 0.000 -1.000" scale="9.5400 9.5400 9.5400" rotate_axis="1.000 1.000 0.000" rotate_deg_per_sec="205.000" />
+        <Object id="ring" js_id="41234" pos="0 200 -160" xdir="-1.000 0.000 0.000" ydir="0.000 1.000 0.000" zdir="0.000 0.000 -1.000" scale="9.0000 9.0000 9.0000" rotate_axis="1.000 0.000 0.000" rotate_deg_per_sec="210.000" />
+        <Object id="ring" js_id="1344" pos="0 200 -160" xdir="-1.000 0.000 0.000" ydir="0.000 1.000 0.000" zdir="0.000 0.000 -1.000" scale="8.5000 8.5000 8.5000" rotate_axis="1.000 1.000 1.000" rotate_deg_per_sec="215.000" />
+
+        <Image id="thumb1" js_id="248" lighting="false" pos="43.700 5.000 17.200" xdir="-1.000 0.000 -0.000" ydir="0.000 1.000 -0.000" zdir="0.000 -0.000 -1.000" scale="3.000 3.000 1.000" />
+        <Image id="thumb2" js_id="251" lighting="false" pos="44.200 5.000 -17.400" xdir="1.000 0.000 0.000" ydir="-0.000 1.000 0.000" zdir="-0.000 -0.000 1.000" scale="3.000 3.000 1.000" />
+        <Image id="thumb3" js_id="254" lighting="false" pos="38.100 5.000 -17.400" xdir="1.000 -0.000 -0.000" ydir="0.000 1.000 0.000" zdir="0.000 -0.000 1.000" scale="2.000 2.000 1.000" />
+        <Object id="tree" shader_id="tree_shader" js_id="560" lighting="false" cull_face="none" pos="-5.000 -1.000 -8.000" xdir="1.000 0.000 0.000" ydir="0.000 1.000 0.000" zdir="0.000 0.000 1.000" scale="0.800 0.800 0.800" />
+        <Object id="tree" shader_id="tree_shader" js_id="561" lighting="false" cull_face="none" pos="10.700 -1.000 7.300" xdir="0.000 0.000 -1.000" ydir="0.000 1.000 0.000" zdir="1.000 0.000 0.000" scale="1.400 1.400 1.300" />
+        <Object id="tree" shader_id="tree_shader" js_id="562" lighting="false" cull_face="none" pos="-10.000 -1.000 2.000" xdir="0.000 0.000 -1.000" ydir="0.000 1.000 0.000" zdir="1.000 0.000 0.000" scale="1.100 1.200 1.100" />
+        <Object id="tree" shader_id="tree_shader" js_id="563" lighting="false" cull_face="none" pos="-1.800 -1.000 9.600" xdir="0.000 0.000 -1.000" ydir="0.000 1.000 0.000" zdir="1.000 0.000 0.000" scale="1.200 1.100 1.200" />
+        <Object id="tree" shader_id="tree_shader" js_id="564" lighting="false" cull_face="none" pos="7.000 -1.000 -6.000" xdir="0.866 0.000 0.500" ydir="0.000 1.000 0.000" zdir="-0.500 0.000 0.866" scale="1.300 1.300 0.800" />
+        <Object id="tree" shader_id="tree_shader" js_id="226" lighting="false" cull_face="none" pos="-1.000 -1.000 58.000" xdir="-0.707 0.000 -0.707" ydir="0.000 1.000 0.000" zdir="0.707 0.000 -0.707" scale="0.800 0.800 0.800" />
+        <Object id="tree" shader_id="tree_shader" js_id="228" lighting="false" cull_face="none" pos="13.900 -1.000 64.500" xdir="0.866 0.000 -0.500" ydir="0.000 1.000 0.000" zdir="0.500 0.000 0.866" scale="1.200 1.200 1.200" />
+        <Object id="tree" shader_id="tree_shader" js_id="229" lighting="false" cull_face="none" pos="-16.900 -1.000 64.500" xdir="0.866 0.000 0.500" ydir="0.000 1.000 0.000" zdir="-0.500 0.000 0.866" scale="1.200 1.200 1.200" />
+        <Object id="tree" shader_id="tree_shader" js_id="226a" lighting="false" cull_face="none" pos="0.000 -1.000 -56.000" xdir="-0.707 0.000 -0.707" ydir="0.000 1.000 0.000" zdir="0.707 0.000 -0.707" scale="0.800 0.800 0.800" />
+        <Object id="tree" shader_id="tree_shader" js_id="228a" lighting="false" cull_face="none" pos="-12.000 -1.000 -60.200" xdir="0.866 0.000 -0.500" ydir="0.000 1.000 0.000" zdir="0.500 0.000 0.866" scale="1.200 1.200 1.200" />
+        <Object id="tree" shader_id="tree_shader" js_id="229a" lighting="false" cull_face="none" pos="8.700 -1.000 -60.800" xdir="0.866 0.000 0.500" ydir="0.000 1.000 0.000" zdir="-0.500 0.000 0.866" scale="1.200 1.200 1.200" />
+        <Object id="tree" shader_id="tree_shader" js_id="226b" lighting="false" cull_face="none" pos="59.700 -1.000 0.000" xdir="-0.707 0.000 -0.707" ydir="0.000 1.000 0.000" zdir="0.707 0.000 -0.707" scale="0.800 0.800 0.800" />
+        <Object id="tree" shader_id="tree_shader" js_id="228b" lighting="false" cull_face="none" pos="63.200 -1.000 -11.000" xdir="0.866 0.000 -0.500" ydir="0.000 1.000 0.000" zdir="0.500 0.000 0.866" scale="1.200 1.200 1.200" />
+        <Object id="tree" shader_id="tree_shader" js_id="229b" lighting="false" cull_face="none" pos="64.300 -1.000 11.000" xdir="0.866 0.000 0.500" ydir="0.000 1.000 0.000" zdir="-0.500 0.000 0.866" scale="1.200 1.200 1.200" />
+        <Object id="tree" shader_id="tree_shader" js_id="226c" lighting="false" cull_face="none" pos="-57.000 -1.000 1.000" xdir="-0.707 0.000 -0.707" ydir="0.000 1.000 0.000" zdir="0.707 0.000 -0.707" scale="0.800 0.800 0.800" />
+        <Object id="tree" shader_id="tree_shader" js_id="228c" lighting="false" cull_face="none" pos="-59.000 -1.000 -13.100" xdir="-0.259 0.000 -0.966" ydir="0.000 1.000 0.000" zdir="0.966 0.000 -0.259" scale="1.200 1.200 1.200" />
+        <Object id="tree" shader_id="tree_shader" js_id="229c" lighting="false" cull_face="none" pos="-64.200 -1.000 13.900" xdir="0.866 0.000 0.500" ydir="0.000 1.000 0.000" zdir="-0.500 0.000 0.866" scale="1.200 1.200 1.200" />
+        <Object id="wings" js_id="250" pos="-40.000 21.000 -40.000" xdir="0.707 -0.000 0.707" ydir="0.000 1.000 0.000" zdir="-0.707 0.000 0.707" />
+        <Object id="wings" js_id="252" pos="41.000 21.000 -41.000" xdir="-0.707 0.000 0.707" ydir="-0.000 1.000 -0.000" zdir="-0.707 -0.000 -0.707" />
+        <Object id="wings" js_id="253" pos="-41.000 21.000 41.000" xdir="0.707 0.000 -0.707" ydir="0.000 1.000 0.000" zdir="0.707 -0.000 0.707" />
+        <Object id="wings" js_id="254" pos="41.000 21.000 41.000" xdir="-0.707 -0.000 -0.707" ydir="-0.000 1.000 -0.000" zdir="0.707 0.000 -0.707" />
+
+        <Object id="kioska" js_id="771a" pos="0.000 0.000 27.000" xdir="1.000 0.000 -0.000" ydir="0.000 1.000 0.000" zdir="0.000 0.000 1.000" />
+        <Object id="kioskb" js_id="772a" cull_face="none" pos="0.000 0.000 27.000" xdir="1.000 0.000 -0.000" ydir="0.000 1.000 0.000" zdir="0.000 0.000 1.000" />
+        <Object id="kioska" js_id="771a" pos="0.000 0.000 27.000" xdir="-1.000 0.000 0.000" ydir="0.000 1.000 0.000" zdir="0.000 0.000 -1.000" />
+        <Object id="kioskb" js_id="772a" cull_face="none" pos="0.000 0.000 27.000" xdir="-1.000 0.000 0.000" ydir="0.000 1.000 0.000" zdir="0.000 0.000 -1.000" />
+
+        <Object id="kioska" js_id="771b" pos="0.000 0.000 -27.000" xdir="1.000 0.000 -0.000" ydir="0.000 1.000 0.000" zdir="0.000 0.000 1.000" />
+        <Object id="kioskb" js_id="772b" cull_face="none" pos="0.000 0.000 -27.000" xdir="1.000 0.000 -0.000" ydir="0.000 1.000 0.000" zdir="0.000 0.000 1.000" />
+        <Object id="kioska" js_id="771b" pos="0.000 0.000 -27.000" xdir="-1.000 0.000 0.000" ydir="0.000 1.000 0.000" zdir="0.000 0.000 -1.000" />
+        <Object id="kioskb" js_id="772b" cull_face="none" pos="0.000 0.000 -27.000" xdir="-1.000 0.000 0.000" ydir="0.000 1.000 0.000" zdir="0.000 0.000 -1.000" />
+
+        <Object id="kioska" js_id="771d" pos="-27.000 0.000 0.000" xdir="1.000 0.000 -0.000" ydir="0.000 1.000 0.000" zdir="0.000 0.000 1.000" />
+        <Object id="kioskb" js_id="772d" cull_face="none" pos="-27.000 0.000 0.000" xdir="1.000 0.000 -0.000" ydir="0.000 1.000 0.000" zdir="0.000 0.000 1.000" />
+        <Object id="kioska" js_id="771d" pos="-27.000 0.000 0.000" xdir="-1.000 0.000 0.000" ydir="0.000 1.000 0.000" zdir="0.000 0.000 -1.000" />
+        <Object id="kioskb" js_id="772d" cull_face="none" pos="-27.000 0.000 0.000" xdir="-1.000 0.000 0.000" ydir="0.000 1.000 0.000" zdir="0.000 0.000 -1.000" />
+
+        <Object id="kioskas" js_id="771a1" pos="0.000 0.000 27.000" xdir="1.000 0.000 -0.000" ydir="0.000 1.000 0.000" zdir="0.000 0.000 1.000" />
+        <Object id="kioskbs" js_id="772a1" video_id="vid_id" cull_face="none" pos="0.000 0.000 27.000" xdir="1.000 0.000 -0.000" ydir="0.000 1.000 0.000" zdir="0.000 0.000 1.000" />
+        <Object id="kioskas" js_id="771a12"  pos="0.000 0.000 27.000" xdir="-1.000 0.000 0.000" ydir="0.000 1.000 0.000" zdir="0.000 0.000 -1.000" />
+
+        <Object id="kioskas" js_id="771b2" pos="0.000 0.000 -27.000" xdir="1.000 0.000 -0.000" ydir="0.000 1.000 0.000" zdir="0.000 0.000 1.000" />
+        <Object id="kioskas" js_id="771b22" pos="0.000 0.000 -27.000" xdir="-1.000 0.000 0.000" ydir="0.000 1.000 0.000" zdir="0.000 0.000 -1.000" />
+
+        <Object id="kioskas" js_id="771d44" pos="-27.000 0.000 0.000" xdir="1.000 0.000 -0.000" ydir="0.000 1.000 0.000" zdir="0.000 0.000 1.000" />
+
+        <Object id="kioskas" js_id="771d4" pos="-27.000 0.000 0.000" xdir="-1.000 0.000 0.000" ydir="0.000 1.000 0.000" zdir="0.000 0.000 -1.000" />
+
+        <Image id="logo5" js_id="465" pos="100.000 288.000 0.000" xdir="0.005 0.000 1.000" ydir="-0.032 0.999 0.000" zdir="-0.999 -0.032 0.005" scale="25.000 28.000 1.000" lighting="false" />
+        <Image id="logo8" js_id="466" pos="-100.000 152.000 0.000" xdir="0.000 0.000 -1.000" ydir="0.000 1.000 0.000" zdir="1.000 0.000 0.000" scale="27.000 22.000 1.000" lighting="false" />
+        <Image id="logo4" js_id="467" pos="-114.000 297.000 129.000" xdir="-1.000 0.000 0.000" ydir="0.000 1.000 0.000" zdir="0.000 0.000 -1.000" scale="11.600 13.000 1.000" lighting="false" />
+        <Image id="thumb1" js_id="468" pos="39.000 160.000 71.000" xdir="-1.000 0.000 0.000" ydir="0.000 1.000 0.000" zdir="0.000 0.000 -1.000" scale="9.000 9.000 1.000" lighting="false" />
+        <Image id="logo15" js_id="470" pos="175.000 268.000 191.000" xdir="-1.000 0.000 0.000" ydir="0.000 1.000 0.000" zdir="0.000 0.000 -1.000" scale="12.000 11.000 1.000" lighting="false" />
+        <Image id="logo2" js_id="471" pos="54.000 247.000 -94.000" xdir="1.000 0.000 0.000" ydir="0.000 1.000 0.000" zdir="0.000 0.000 1.000" scale="26.000 26.000 1.000" lighting="false" />
+        <Image id="logo3" js_id="472" pos="-51.000 249.000 -94.000" xdir="1.000 0.000 0.000" ydir="0.000 1.000 0.000" zdir="0.000 0.000 1.000" scale="29.000 45.000 1.000" lighting="false" />
+        <Image id="logo9" js_id="473" pos="-201.000 291.000 0.000" xdir="0.000 0.000 -1.000" ydir="0.000 1.000 0.000" zdir="1.000 0.000 0.000" scale="30.000 34.000 1.000" lighting="false" />
+        <Image id="aussiebar" js_id="254" pos="-84.800 2.000 3.000" xdir="0.000 -0.000 -1.000" ydir="-0.000 1.000 -0.000" zdir="1.000 0.000 0.000" scale="5.000 5.000 1.000" />
+        <Image id="tech1" js_id="8549" pos="38.000 13.000 51.600" xdir="-1.000 -0.000 0.000" ydir="-0.000 1.000 -0.000" zdir="-0.000 -0.000 -1.000" scale="3.000 3.000 1.000" />
+        <Image id="tech2" js_id="8550" pos="51.600 13.000 38.000" xdir="-0.000 0.000 1.000" ydir="0.000 1.000 -0.000" zdir="-1.000 0.000 -0.000" scale="3.000 3.000 1.000" />
+        <Image id="tech3" js_id="8553" pos="-51.600 13.000 38.200" xdir="-0.000 -0.000 -1.000" ydir="0.000 1.000 -0.000" zdir="1.000 -0.000 -0.000" scale="3.000 3.000 1.000" />
+        <Image id="tech4" js_id="8556" pos="-38.100 13.000 51.600" xdir="-1.000 0.000 0.012" ydir="0.000 1.000 0.004" zdir="-0.012 0.004 -1.000" scale="3.000 3.000 1.000" />
+        <Image id="tech5" js_id="8557" pos="-38.300 13.000 -51.500" xdir="1.000 -0.000 -0.000" ydir="0.000 1.000 0.000" zdir="0.000 -0.000 1.000" scale="3.000 3.000 1.000" />
+        <Image id="tech6" js_id="8558" pos="-51.500 13.000 -38.000" xdir="0.000 0.000 -1.000" ydir="-0.000 1.000 0.000" zdir="1.000 0.000 0.000" scale="3.000 3.000 1.000" />
+        <Image id="techb1" js_id="8560" pos="38.000 12.000 -51.500" xdir="1.000 0.000 0.000" ydir="-0.000 1.000 -0.000" zdir="-0.000 0.000 1.000" scale="3.000 3.000 1.000" />
+        <Image id="techb2" js_id="8561" pos="51.500 12.000 -38.000" xdir="-0.012 0.000 1.000" ydir="0.004 1.000 0.000" zdir="-1.000 0.004 -0.012" scale="3.000 3.000 1.000" />
+        <Image id="techb3" js_id="8566" pos="-1.000 13.900 51.700" xdir="-1.000 0.000 -0.004" ydir="0.000 1.000 -0.020" zdir="0.004 -0.020 -1.000" scale="1.500 1.400 0.900" />
+        <Image id="techb4" js_id="8568" pos="-51.700 14.000 -0.100" xdir="0.004 0.000 -1.000" ydir="0.020 1.000 0.000" zdir="1.000 -0.020 0.004" scale="1.400 1.400 0.900" />
+        <Image id="techb5" js_id="8569" pos="0.100 14.000 -51.700" xdir="1.000 0.000 -0.004" ydir="0.000 1.000 0.020" zdir="0.004 -0.020 1.000" scale="1.400 1.400 0.900" />
+        <Image id="logo5" js_id="8570" pos="51.692 14.363 -0.403" xdir="0.004 0.000 1.000" ydir="-0.020 1.000 0.000" zdir="-1.000 -0.020 0.004" scale="5.000 5.000 1.000" />
+
+        <Image id="arrow" js_id="2171" pos="21.000 0.000 -48.000" xdir="-0.000 -0.000 1.000" ydir="1.000 0.000 0.000" zdir="-0.000 1.000 0.000" scale="2.000 1.000 1.000" />
+        <Image id="arrow" js_id="2172" pos="48.890 3.976 -24.081" xdir="-1.000 0.000 -0.000" ydir="-0.000 -0.000 1.000" zdir="0.000 1.000 0.000" scale="2.000 1.000 1.000" />
+
+        <Link pos="50.590 -3.000 -16.740" xdir="0.906 0.000 0.423" ydir="0.000 1.000 0.000" zdir="-0.423 0.000 0.906" url="http://geniusvr.com/khan/khanhallway.html" col="1.000 1.000 1.000" scale="3.000 2.500 1.000" draw_glow="false" draw_text="false" thumb_id="thumb1" />
+        <Link pos="50.590 -3.000 16.740" xdir="-0.906 0.000 0.423" ydir="0.000 1.000 0.000" zdir="-0.423 0.000 -0.906" url="http://geniusvr.com/teststuff/ted/tedhallway.html" col="1.000 1.000 1.000" scale="3.000 2.500 1.000" draw_glow="false" draw_text="false" thumb_id="thumb2" />
+        <Link pos="47.700 -3.000 -17.400" xdir="1.000 0.000 0.000" ydir="0.000 1.000 0.000" zdir="-0.000 0.000 1.000" url="http://www.reddit.com/r/VReducation/" col="1.000 1.000 1.000" scale="3.000 2.500 1.000" draw_glow="false" draw_text="false" thumb_id="thumb3" />
+        <Link pos="47.700 -3.000 17.400" xdir="-1.000 0.000 0.000" ydir="0.000 1.000 0.000" zdir="-0.000 0.000 -1.000" url="http://vrsites.com/assets/Firefoxg/9/convcenter.html" col="1.000 1.000 1.000" scale="3.000 2.500 1.000" draw_glow="false" draw_text="false" thumb_id="thumb4" />
+        <Link pos="-84.700 0.000 2.800" xdir="0.000 0.000 -1.000" ydir="0.000 1.000 0.000" zdir="1.000 0.000 0.000" url="http://www.thevrbar.com" col="1.000 1.000 1.000" scale="2.400 3.200 1.000" draw_glow="false" draw_text="false" />
+        <Link pos="52.000 -3.000 0.000" xdir="0.000 0.000 1.000" ydir="0.000 1.000 0.000" zdir="-1.000 0.000 0.000" url="http://geniusvr.com/teststuff/grandlobby.html" col="1.000 1.000 1.000" scale="32.000 3.000 1.000" title="FireBox - experiments" draw_glow="false" draw_text="false" thumb_id="thumb5"/>
+
+        <Link pos="51.700 4.000 -24.000" xdir="0.000 0.000 1.000" ydir="0.000 1.000 0.000" zdir="-1.000 0.000 0.000" url="http://vrsites.com/assets/Firefoxg/5/ptable.html" col="0.660 0.990 0.676" scale="5.700 5.700 1.000" draw_glow="false" draw_text="false" thumb_id="thumb6" />
+        <Link pos="21.100 0.000 -51.800" xdir="1.000 0.000 0.000" ydir="0.000 1.000 0.000" zdir="0.000 0.000 1.000" url="http://vrsites.com/assets/Firefoxg/5/solarsystem/scalesolar.html" col="0.660 0.990 0.683" scale="4.000 4.000 1.000" draw_glow="false" draw_text="false" thumb_id="thumb7" />
+        <Link pos="27.000 4.000 51.720" xdir="-1.000 0.000 0.000" ydir="0.000 1.000 0.000" zdir="-0.000 0.000 -1.000" url="http://vrsites.com/assets/Firefoxg/5/gizapyramids/gizapyramid.html" col="0.660 0.990 0.815" scale="5.000 5.000 1.000" draw_glow="false" draw_text="false" thumb_id="thumb8" />
+        <Link pos="51.700 4.000 20.800" xdir="0.000 0.000 1.000" ydir="0.000 1.000 0.000" zdir="-1.000 0.000 0.000" url="http://vrsites.com/assets/Firefoxg/5/test/piston.html" col="0.660 0.990 0.683" scale="5.000 5.000 1.000" draw_glow="false" draw_text="false" thumb_id="thumb9" />
+        <Link pos="50.000 8.000 50.000" xdir="-0.722 0.000 0.692" ydir="0.000 1.000 0.000" zdir="-0.692 0.000 -0.722" url="http://vrsites.com/assets/Firefoxg/7/googlesearch.html" col="1 1 1" scale="5.000 5.000 1.000" title="Google Search" draw_glow="false" draw_text="false" thumb_id="thumb10" />
+
+        <Link pos="51.800 0.000 -21.000" xdir="0.000 0.000 1.000" ydir="0.000 1.000 0.000" zdir="-1.000 0.000 0.000" url="http://geniusvr.com/khan/mars/galecrater.html" col="0.990 0.660 0.745" scale="4.000 4.000 1.000" title="The Surface of Mars, Gale Crater" draw_glow="false" draw_text="false" thumb_id="thumb11" />
+        <Link pos="24.000 4.000 -51.000" xdir="1.000 0.000 0.000" ydir="0.000 1.000 0.000" zdir="-0.000 0.000 1.000" url="http://geniusvr.com/khan/moon/moonterrain.html" col="0.776 0.660 0.990" scale="4.000 4.000 1.000" title="Far side of the Moon" draw_glow="false" draw_text="false" thumb_id="thumb12" />
+
+        <Link pos="51.700 4.000 26.000" xdir="-0.000 0.000 1.000" ydir="0.000 1.000 0.000" zdir="-1.000 0.000 -0.000" url="http://vrsites.com/Redbull/" col="0.761 0.660 0.990" scale="5.000 5.000 1.000" title="Decontructed Formula 1 Car" draw_glow="false" draw_text="false" thumb_id="thumb13" />
+        <Link pos="84.900 0.000 0.000" xdir="-0.000 0.000 1.000" ydir="0.000 1.000 0.000" zdir="-1.000 0.000 -0.000" url="http://geniusvr.com/newsroom/newsroom.html" scale="9.200 4.400 1.000" title="The Newsroom" draw_glow="false" draw_text="false" thumb_id="thumb14" />
     </Room>
 </FireBoxRoom>
 
