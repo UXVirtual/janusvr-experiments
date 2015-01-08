@@ -18,32 +18,29 @@
 
         <AssetSound id="reboot-game-cube-mixed" src="music/reboot-game-cube-mixed.mp3" />
 
-        <AssetShader id="game-cube-shader" src="shaders/gamecube.frag.glsl" />
-        <AssetShader id="game-cube-sky" src="shaders/gamecube-sky.frag.glsl" />
+        <AssetShader id="game-cube-shader" src="shaders/mysticalshader.frag.glsl" />
         <AssetObject id="shadercube" src="models/cube.obj" />
         <AssetObject id="skysphere" src="models/sphere.obj" />
 
         <AssetImage id='sky' src='img/reboot/skybox/depositphotos_51372401-Seamless-pattern.-Computer-circuit-board..jpg' tex_clamp='true' />
         <AssetImage id='sky-up' src='img/reboot/skybox/top.jpg' tex_clamp='true' />
 
+        <AssetScript src="js/reboot.min.js" />
+        <AssetObject id="campus" src="http://vrsites.com/assets/Firefoxg/5/campus.obj" mtl="http://vrsites.com/assets/Firefoxg/5/campus.mtl" />
+
         <AssetShader id="tree_shader" vertex_src="shaders/tree.vert.glsl" />
         <AssetShader id="water_shader" vertex_src="shaders/water.vert.glsl" />
         <AssetShader id="bush_shader" vertex_src="shaders/bush.vert.glsl" />
 
-        <AssetScript src="js/reboot.min.js" />
+
 
         <AssetObject id="1" src="http://geniusvr.com/3dAds/curvedwallpanels2.obj" mtl="http://geniusvr.com/3dAds/curvedwallpanels2.mtl" />
-
-
-        <AssetObject id="campus" src="http://vrsites.com/assets/Firefoxg/5/campus.obj" mtl="http://vrsites.com/assets/Firefoxg/5/campus.mtl" />
 
 
         <AssetObject id="wings" src="http://vrsites.com/assets/Firefoxg/5/anglewings.obj" mtl="http://vrsites.com/assets/Firefoxg/5/anglewings.mtl" />
 
         <AssetObject id="campusblock" src="http://geniusvr.com/teststuff/testcity/city.dae" />
         <AssetObject id="campusblockcoll" src="http://geniusvr.com/campus/cityblockforcampus2col.obj" />
-
-        <AssetObject id="tree" shader_id="tree_shader" src="http://geniusvr.com/teststuff/tree1.obj" mtl="http://geniusvr.com/teststuff/tree1.mtl" />
         <!--<AssetVideo id="vid_id" src="http://geniusvr.com/teststuff/citysound.ogg" auto_play="true" loop="true"/>-->
 
         <AssetObject id="ring" src="http://vrsites.com/assets/firefoxgg/7/ring3.obj" tex0="http://www.string.se/img/dimensions/swatch_white.png" />
@@ -52,48 +49,29 @@
 
     </Assets>
 
-    <Room fog="true" skybox_left_id="sky" skybox_right_id="sky" skybox_front_id="sky" skybox_back_id="sky" skybox_up_id="sky-up" skybox_down_id="sky" fog_col="0.36 0 0.37" fog_mode="exp2" fog_density="0.003" visible="false" default_sounds="false" pos="-91.2 71 98.1" xdir="-0.5 0 -0.87" ydir="0 1 0" zdir="0.87 0 -0.5" col="1.000 1.000 1.000" near_dist="0.010" far_dist="100000.000" walk_speed="5.000" run_speed="50.000">
+    <Room fog="true" skybox_left_id="sky" skybox_right_id="sky" skybox_front_id="sky" skybox_back_id="sky" skybox_up_id="sky-up" skybox_down_id="sky" fog_col="0.1 0 0.1" fog_mode="exp2" fog_density="0.01" visible="false" default_sounds="false" pos="-91.2 71 98.1" xdir="-0.5 0 -0.87" ydir="0 1 0" zdir="0.87 0 -0.5" col="1.000 1.000 1.000" near_dist="0.010" far_dist="100000.000" walk_speed="5.000" run_speed="50.000">
 
         <Object id="cube" collision_id="cube" pos="0 255 0" scale="100 2000 100" lighting="false" shader_id="game-cube-shader" />
 
         <Sound id="reboot-game-cube-mixed" rect="-500 -500 500 500" loop="true" />
 
-        <Object id="skysphere" pos="0 0 0" scale="100 100 100" locked="true" shader_id="game-cube-sky" image_id="sky" />
-
-        <Object id="cube" collision_id="cube" pos="-94 70 101" scale="13 1 12" col="1 1 1" />
-
-        <Image id="arrow" js_id="2012" pos="47.000 -3.000 0.000" xdir="-1.000 -0.000 -0.000" ydir="-0.000 -0.000 1.000" zdir="-0.000 1.000 0.000" scale="3.000 1.000 1.000" lighting="false" />
-
-        <Object id="1" js_id="1780" pos="40.400 -1.400 17.300" xdir="-0.000 1.000 -0.000" ydir="-0.000 -0.000 -1.000" zdir="-1.000 -0.000 0.000" scale="0.800 0.600 0.500" lighting="false" />
-        <Object id="1" js_id="1784" pos="40.300 -1.400 -17.200" xdir="-0.000 1.000 -0.000" ydir="0.000 0.000 1.000" zdir="1.000 0.000 -0.000" scale="0.800 0.700 0.500" lighting="false" />
 
         <Object id="campus" locked="true" js_id="171" cull_face="none" lighting="false" collision_id="campus" pos="0.000 0.000 0.000" xdir="0.000 0.000 1.000" ydir="0.000 1.000 0.000" zdir="-1.000 0.000 0.000" />
         <Object id="campusblock" collision_id="campusblockcoll" locked="true" js_id="172" lighting="false" pos="0.000 0.000 0.000" xdir="0.000 0.000 1.000" ydir="0.000 1.000 0.000" zdir="-1.000 0.000 0.000" />
 
-        <Object id="ring" js_id="1234" pos="0 200 -160" xdir="-1.000 0.000 0.000" ydir="0.000 1.000 0.000" zdir="0.000 0.000 -1.000" scale="10.0000 10.0000 10.0000" rotate_axis="0.000 0.000 1.000" rotate_deg_per_sec="200.000" />
-        <Object id="ring" js_id="2132" pos="0 200 -160" xdir="-1.000 0.000 0.000" ydir="0.000 1.000 0.000" zdir="0.000 0.000 -1.000" scale="9.5400 9.5400 9.5400" rotate_axis="1.000 1.000 0.000" rotate_deg_per_sec="205.000" />
-        <Object id="ring" js_id="41234" pos="0 200 -160" xdir="-1.000 0.000 0.000" ydir="0.000 1.000 0.000" zdir="0.000 0.000 -1.000" scale="9.0000 9.0000 9.0000" rotate_axis="1.000 0.000 0.000" rotate_deg_per_sec="210.000" />
-        <Object id="ring" js_id="1344" pos="0 200 -160" xdir="-1.000 0.000 0.000" ydir="0.000 1.000 0.000" zdir="0.000 0.000 -1.000" scale="8.5000 8.5000 8.5000" rotate_axis="1.000 1.000 1.000" rotate_deg_per_sec="215.000" />
+        <Object id="cube" collision_id="cube" pos="0 255 0" scale="100 2000 100" lighting="false" shader_id="game-cube-shader" />
 
-        <Image id="thumb1" js_id="248" lighting="false" pos="43.700 5.000 17.200" xdir="-1.000 0.000 -0.000" ydir="0.000 1.000 -0.000" zdir="0.000 -0.000 -1.000" scale="3.000 3.000 1.000" />
-        <Image id="thumb2" js_id="251" lighting="false" pos="44.200 5.000 -17.400" xdir="1.000 0.000 0.000" ydir="-0.000 1.000 0.000" zdir="-0.000 -0.000 1.000" scale="3.000 3.000 1.000" />
-        <Image id="thumb3" js_id="254" lighting="false" pos="38.100 5.000 -17.400" xdir="1.000 -0.000 -0.000" ydir="0.000 1.000 0.000" zdir="0.000 -0.000 1.000" scale="2.000 2.000 1.000" />
-        <Object id="tree" shader_id="tree_shader" js_id="226" lighting="false" cull_face="none" pos="-1.000 -1.000 58.000" xdir="-0.707 0.000 -0.707" ydir="0.000 1.000 0.000" zdir="0.707 0.000 -0.707" scale="0.800 0.800 0.800" />
-        <Object id="tree" shader_id="tree_shader" js_id="228" lighting="false" cull_face="none" pos="13.900 -1.000 64.500" xdir="0.866 0.000 -0.500" ydir="0.000 1.000 0.000" zdir="0.500 0.000 0.866" scale="1.200 1.200 1.200" />
-        <Object id="tree" shader_id="tree_shader" js_id="229" lighting="false" cull_face="none" pos="-16.900 -1.000 64.500" xdir="0.866 0.000 0.500" ydir="0.000 1.000 0.000" zdir="-0.500 0.000 0.866" scale="1.200 1.200 1.200" />
-        <Object id="tree" shader_id="tree_shader" js_id="226a" lighting="false" cull_face="none" pos="0.000 -1.000 -56.000" xdir="-0.707 0.000 -0.707" ydir="0.000 1.000 0.000" zdir="0.707 0.000 -0.707" scale="0.800 0.800 0.800" />
-        <Object id="tree" shader_id="tree_shader" js_id="228a" lighting="false" cull_face="none" pos="-12.000 -1.000 -60.200" xdir="0.866 0.000 -0.500" ydir="0.000 1.000 0.000" zdir="0.500 0.000 0.866" scale="1.200 1.200 1.200" />
-        <Object id="tree" shader_id="tree_shader" js_id="229a" lighting="false" cull_face="none" pos="8.700 -1.000 -60.800" xdir="0.866 0.000 0.500" ydir="0.000 1.000 0.000" zdir="-0.500 0.000 0.866" scale="1.200 1.200 1.200" />
-        <Object id="tree" shader_id="tree_shader" js_id="226b" lighting="false" cull_face="none" pos="59.700 -1.000 0.000" xdir="-0.707 0.000 -0.707" ydir="0.000 1.000 0.000" zdir="0.707 0.000 -0.707" scale="0.800 0.800 0.800" />
-        <Object id="tree" shader_id="tree_shader" js_id="228b" lighting="false" cull_face="none" pos="63.200 -1.000 -11.000" xdir="0.866 0.000 -0.500" ydir="0.000 1.000 0.000" zdir="0.500 0.000 0.866" scale="1.200 1.200 1.200" />
-        <Object id="tree" shader_id="tree_shader" js_id="229b" lighting="false" cull_face="none" pos="64.300 -1.000 11.000" xdir="0.866 0.000 0.500" ydir="0.000 1.000 0.000" zdir="-0.500 0.000 0.866" scale="1.200 1.200 1.200" />
-        <Object id="tree" shader_id="tree_shader" js_id="226c" lighting="false" cull_face="none" pos="-57.000 -1.000 1.000" xdir="-0.707 0.000 -0.707" ydir="0.000 1.000 0.000" zdir="0.707 0.000 -0.707" scale="0.800 0.800 0.800" />
-        <Object id="tree" shader_id="tree_shader" js_id="228c" lighting="false" cull_face="none" pos="-59.000 -1.000 -13.100" xdir="-0.259 0.000 -0.966" ydir="0.000 1.000 0.000" zdir="0.966 0.000 -0.259" scale="1.200 1.200 1.200" />
-        <Object id="tree" shader_id="tree_shader" js_id="229c" lighting="false" cull_face="none" pos="-64.200 -1.000 13.900" xdir="0.866 0.000 0.500" ydir="0.000 1.000 0.000" zdir="-0.500 0.000 0.866" scale="1.200 1.200 1.200" />
-        <Object id="wings" js_id="250" pos="-40.000 21.000 -40.000" xdir="0.707 -0.000 0.707" ydir="0.000 1.000 0.000" zdir="-0.707 0.000 0.707" />
-        <Object id="wings" js_id="252" pos="41.000 21.000 -41.000" xdir="-0.707 0.000 0.707" ydir="-0.000 1.000 -0.000" zdir="-0.707 -0.000 -0.707" />
-        <Object id="wings" js_id="253" pos="-41.000 21.000 41.000" xdir="0.707 0.000 -0.707" ydir="0.000 1.000 0.000" zdir="0.707 -0.000 0.707" />
-        <Object id="wings" js_id="254" pos="41.000 21.000 41.000" xdir="-0.707 -0.000 -0.707" ydir="-0.000 1.000 -0.000" zdir="0.707 0.000 -0.707" />
+        <Sound id="reboot-game-cube-mixed" rect="-500 -500 500 500" loop="true" />
+
+
+
+        <Object id="cube" collision_id="cube" pos="-94 70 101" scale="13 1 12" col="1 1 1" />
+
+
+        <Object id="campus" locked="true" js_id="171" cull_face="none" lighting="false" collision_id="campus" pos="0.000 0.000 0.000" xdir="0.000 0.000 1.000" ydir="0.000 1.000 0.000" zdir="-1.000 0.000 0.000" />
+        <Object id="campusblock" collision_id="campusblockcoll" locked="true" js_id="172" lighting="false" pos="0.000 0.000 0.000" xdir="0.000 0.000 1.000" ydir="0.000 1.000 0.000" zdir="-1.000 0.000 0.000" />
+
+
 
 
     </Room>

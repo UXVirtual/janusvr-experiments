@@ -6,7 +6,7 @@ varying vec3 iNormal;
 
 vec3 colour = vec3(5,0,5);
 
-float alpha = 0.7;
+float alpha = 0.9;
 
 float grid2(vec2 p) {
 
